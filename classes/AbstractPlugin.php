@@ -14,7 +14,7 @@
  * @package Structure
  * @since   1.0.0
  */
-abstract class Structure_AbstractPlugin {
+abstract class OSMHelper_AbstractPlugin {
 	/**
 	 * Plugin basename.
 	 *

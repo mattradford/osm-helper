@@ -26,47 +26,47 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @param string $class Class name.
  */
-function structure_autoloader( $class ) {
-	if ( 0 !== strpos( $class, 'Structure_' ) ) {
+function osmhelper_autoloader( $class ) {
+	if ( 0 !== strpos( $class, 'OSMHelper_' ) ) {
 		return;
 	}
 
 	$file  = dirname( __FILE__ ) . '/classes/';
-	$file .= str_replace( array( 'Structure_', '_' ), array( '', '/' ), $class );
+	$file .= str_replace( array( 'OSMHelper_', '_' ), array( '', '/' ), $class );
 	$file .= '.php';
 
 	if ( file_exists( $file ) ) {
 		require_once( $file );
 	}
 }
-spl_autoload_register( 'structure_autoloader' );
+spl_autoload_register( 'osmhelper_autoloader' );
 
 /**
  * Retrieve the main plugin instance.
  *
  * @since 1.0.0
  *
- * @return Structure_Plugin
+ * @return OSMHelper_Plugin
  */
-function structure() {
+function osmhelper() {
 	static $instance;
 
 	if ( null === $instance ) {
-		$instance = new Structure_Plugin();
+		$instance = new OSMHelper_Plugin();
 	}
 
 	return $instance;
 }
 
 // Set up the main plugin instance.
-structure()->set_basename( plugin_basename( __FILE__ ) )
+osmhelper()->set_basename( plugin_basename( __FILE__ ) )
            ->set_directory( plugin_dir_path( __FILE__ ) )
            ->set_file( __FILE__ )
-           ->set_slug( 'structure' )
+           ->set_slug( 'osmhelper' )
            ->set_url( plugin_dir_url( __FILE__ ) );
 
 // Register hook providers.
-structure()->register_hooks( new Structure_Provider_I18n() );
+osmhelper()->register_hooks( new OSMHelper_Provider_I18n() );
 
 // Load the plugin.
-add_action( 'plugins_loaded', array( structure(), 'load_plugin' ) );
+add_action( 'plugins_loaded', array( osmhelper(), 'load_plugin' ) );

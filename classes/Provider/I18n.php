@@ -2,8 +2,8 @@
 /**
  * Internationalization provider.
  *
- * @package   Structure
- * @copyright Copyright (c) 2016, Cedaro, LLC
+ * @package   OSM Helper
+ * @copyright Copyright (c) 2017, mattrad
  * @license   GPL-2.0+
  * @since     1.0.0
  */
@@ -14,7 +14,7 @@
  * @package Structure
  * @since   1.0.0
  */
-class Structure_Provider_I18n extends Structure_AbstractProvider {
+class OSMHelper_Provider_I18n extends OSMHelper_AbstractProvider {
 	/**
 	 * Register hooks.
 	 *

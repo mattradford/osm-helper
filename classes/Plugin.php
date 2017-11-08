@@ -2,8 +2,8 @@
 /**
  * Main plugin.
  *
- * @package   Structure
- * @copyright Copyright (c) 2016, Cedaro, LLC
+ * @package   OSM Helper
+ * @copyright Copyright (c) 2017, mattrad
  * @license   GPL-2.0+
  * @since     1.0.0
  */
@@ -14,7 +14,7 @@
  * @package Structure
  * @since   1.0.0
  */
-class Structure_Plugin extends Structure_AbstractPlugin {
+class OSMHelper_Plugin extends OSMHelper_AbstractPlugin {
 	/**
 	 * Load the plugin.
 	 *

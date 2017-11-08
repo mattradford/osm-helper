@@ -2,8 +2,8 @@
 /**
  * Base hook provider.
  *
- * @package   Structure
- * @copyright Copyright (c) 2016, Cedaro, LLC
+ * @package   OSM Helper
+ * @copyright Copyright (c) 2017, mattrad
  * @license   GPL-2.0+
  * @since     1.0.0
  */
@@ -14,12 +14,12 @@
  * @package Structure
  * @since   1.0.0
  */
-abstract class Structure_AbstractProvider {
+abstract class OSMHelper_AbstractProvider {
 	/**
 	 * Plugin instance.
 	 *
 	 * @since 1.0.0
-	 * @var Structure_Plugin
+	 * @var OSMHelper_Plugin
 	 */
 	protected $plugin;
 
@@ -28,7 +28,7 @@ abstract class Structure_AbstractProvider {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @param Structure_Plugin $plugin Main plugin instance.
+	 * @param OSMHelper_Plugin $plugin Main plugin instance.
 	 */
 	public function set_plugin( $plugin ) {
 		$this->plugin = $plugin;
