@@ -2,7 +2,7 @@
 /**
  * Plugin Name: OSM Helper
  * Plugin URI:  https://github.com/mattradford/osm-helper
- * Description: Interacts with the Online Scout Manager API. Pulls in section programmes.
+ * Description: Show section programmes from your Online Scout Manager account on your WordPress site.
  * Version:     0.0.1
  * Author:      mattrad
  * Author URI:  https://www.mattrad.uk
@@ -37,6 +37,7 @@ function osmhelper_autoloader( $class ) {
 
 	if ( file_exists( $file ) ) {
 		require_once( $file );
+		// echo $file;
 	}
 }
 spl_autoload_register( 'osmhelper_autoloader' );
