@@ -2,8 +2,8 @@
 /**
  * Common plugin functionality.
  *
- * @package   Structure
- * @copyright Copyright (c) 2016 Cedaro, LLC
+ * @package   OSM Helper
+ * @copyright Copyright (c) 2017, mattrad
  * @license   GPL-2.0+
  * @since     1.0.0
  */

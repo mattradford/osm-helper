@@ -1,14 +1,14 @@
 <?php
 /**
- * Plugin Name: Structure
- * Plugin URI:  https://github.com/cedaro/structure
- * Description: An example plugin demonstrating a lightweight method for adding a bit of structure to plugins.
+ * Plugin Name: OSM Helper
+ * Plugin URI:  https://github.com/mattradford/osm-helper
+ * Description: Interacts with the Online Scout Manager API. Pulls in section programmes.
  * Version:     1.0.0
- * Author:      Cedaro
- * Author URI:  http://www.cedaro.com/
+ * Author:      mattrad
+ * Author URI:  https://www.mattrad.uk
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: structure
+ * Text Domain: osm-helper
  * Domain Path: /languages
  */
 
