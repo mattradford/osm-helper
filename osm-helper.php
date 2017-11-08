@@ -3,7 +3,7 @@
  * Plugin Name: OSM Helper
  * Plugin URI:  https://github.com/mattradford/osm-helper
  * Description: Interacts with the Online Scout Manager API. Pulls in section programmes.
- * Version:     1.0.0
+ * Version:     0.0.1
  * Author:      mattrad
  * Author URI:  https://www.mattrad.uk
  * License:     GPL-2.0+
