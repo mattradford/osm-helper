@@ -11,7 +11,7 @@
 /**
  * Internationalization provider class.
  *
- * @package Structure
+ * @package OSMHelper
  * @since   1.0.0
  */
 class OSMHelper_Provider_I18n extends OSMHelper_AbstractProvider {

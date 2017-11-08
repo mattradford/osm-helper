@@ -8,19 +8,17 @@
  * @since     1.0.0
  */
 
-/**
- * Main plugin class.
+ /**
+ * if uninstall.php is not called by WordPress, die
  *
  * @package OSMHelper
  * @since   1.0.0
  */
-class OSMHelper_Plugin extends OSMHelper_AbstractPlugin {
-	/**
-	 * Load the plugin.
-	 *
-	 * @since 1.0.0
-	 */
-	public function load_plugin() {
-
-	}
+// 
+if (!defined('WP_UNINSTALL_PLUGIN')) {
+    die;
 }
+ 
+$option_name = 'wporg_option';
+ 
+delete_option($option_name);

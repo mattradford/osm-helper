@@ -11,7 +11,7 @@
 /**
  * Abstract plugin class.
  *
- * @package Structure
+ * @package OSMHelper
  * @since   1.0.0
  */
 abstract class OSMHelper_AbstractPlugin {
